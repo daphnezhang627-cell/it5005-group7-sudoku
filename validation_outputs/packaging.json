@@ -2,13 +2,11 @@
   "archive": "/mnt/c/users/93459/desktop/it5005/assignment export/Group7_Integration_DRAFT.zip",
   "status": "DRAFT",
   "missing": [
-    "FANG XUYI student ID confirmation",
-    "Actual contributions confirmation",
     "Integration-branch deployment and verification"
   ],
-  "sha256": "b0b658c6b9faa1098ef8a09994c9953c40985ab45f38a746a81475e3bea013c4",
+  "sha256": "0784041355fb4890a5404c8be8ee3fa245937c743eceda392bacb8ad7873abf7",
   "files": {
-    "Sudoku_Assignment.ipynb": "37306e14a79d79af50f03208769baa1abc3072fc1a54768e054f923780f97203",
+    "Sudoku_Assignment.ipynb": "c000aea8ac07b9a3c4b9a2d768b0f32fbd68f507b07b75a57f5d71b6ae17ca93",
     "sudoku_solver.py": "225cafd7524fabbe6b03c7efd03c6ac8e667e4b8b59ed647279fe09f47d321a0",
     "sudoku_app.py": "03b24acd9eda7b6daf92022a939d28b8a46814848b6782befa19dccc546bda9c"
   }

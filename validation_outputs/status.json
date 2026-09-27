@@ -6,8 +6,7 @@
   "entrypoint": "sudoku_app.py",
   "deployment_status": "PENDING: account-side branch configuration and public verification required",
   "missing": [
-    "FANG XUYI student ID confirmation",
-    "Actual contributions confirmation",
     "Integration-branch deployment and verification"
-  ]
+  ],
+  "member_status": "Three IDs and Part B responsibilities confirmed. CHOOG SHENG HONG unreachable; instructor informed; ID/contribution unknown. Other individual contributions not asserted."
 }

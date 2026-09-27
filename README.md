@@ -22,5 +22,6 @@ The Notebook's two slow general-KB experiment calls are deliberately commented
 out after the teammate's recorded interrupted attempts; Run All executes the normal
 validation cells. Q1 and Q3 preserve the teammate's latest explanations.
 
-Pending: confirm FANG XUYI's ID and actual contributions; deploy this branch and
-verify its public app before declaring the three-file ZIP ready to submit.
+Member IDs and Part B responsibilities are confirmed and recorded. The unreachable
+fourth member's unknown information is documented without invented contributions.
+Pending: deploy this branch and verify its public app before declaring the ZIP ready.

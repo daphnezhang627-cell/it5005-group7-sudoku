@@ -42,7 +42,7 @@ The reported ~0.2 seconds describes KB construction, not inference.
 | BC query and actual reasoning | ProofSet, build_proof, query UI | Proof DAG and UI tests |
 | Protected files/functions/imports | tests/test_regressions.py | Byte/AST comparison |
 | Community Cloud integration branch | share.streamlit.io | Pending account-side deployment and public verification |
-| Member information | Notebook group section | FANG XUYI ID conflict and actual contributions pending |
+| Member information | Notebook group section | Three IDs and Part B allocation confirmed; unreachable fourth member documented |
 | Exactly three files under Group7 | packaging check | Draft only until remaining requirements resolved |
 
 ## Deployment
@@ -51,3 +51,11 @@ Required source: repository `daphnezhang627-cell/it5005-group7-sudoku`, branch
 `group7-integration`, entry `sudoku_app.py`. Six runtime files remain together.
 Do not confuse the earlier main deployment with verified integration deployment.
 Keep the older app if a new deployment is necessary; do not delete it.
+
+## Confirmed member update (28 September)
+
+FANG XUYI: A0353836W. Part B: CHEN JUNXIAO Q1/Q2, FANG XUYI Q3,
+ZHANG SHIHAN Q4/Q5. The former ID conflict is resolved. CHOOG SHENG HONG
+remains unreachable; the instructor has been informed, and his ID/contribution
+are unconfirmed. No unsupported individual coding/testing/deployment attribution
+is made. Only Notebook Markdown changed; all executed code and outputs remain intact.

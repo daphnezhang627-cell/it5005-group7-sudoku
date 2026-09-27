@@ -56,7 +56,7 @@ claimed as validation of this version.
 
 ## Submission status
 
-Pending FANG XUYI's ID conflict, actual contribution confirmation, and Cloud
-configuration/public verification of group7-integration. CHOOG SHENG HONG is
-recorded as uncontacted with ID/contribution unconfirmed, following the latest
-user instruction. Only a clearly named draft ZIP may be produced at this stage.
+The three participating members' IDs and Part B responsibilities are confirmed.
+CHOOG SHENG HONG is unreachable and the instructor has been informed; his
+ID/contribution remain unconfirmed. Other individual contributions are not invented.
+Pending Cloud configuration/public verification of group7-integration. Only a clearly named draft ZIP may be produced at this stage.
