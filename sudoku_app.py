@@ -6,6 +6,7 @@ from pathlib import Path
 
 import streamlit as st
 
+from logic_ import conjuncts
 from sudoku_solver import (
     atom,
     build_definite_kb,
@@ -25,7 +26,7 @@ def decode_symbol(symbol):
 
 
 def describe_step(step):
-    """Turn an actual backward-chaining proof step into a readable sentence."""
+    """Turn a proved rule and its premises into a readable sentence."""
     kind, conclusion, premises = step
     conclusion_kind, row, col, value = decode_symbol(conclusion)
 
@@ -57,6 +58,47 @@ def describe_step(step):
         f'Cell ({source_row}, {source_col}) contains {value}. '
         f'Cell ({row}, {col}) shares its {unit}, so {value} is eliminated there.'
     )
+
+
+class ProofSet(set):
+    """Keep the premises that were already true when BC proved a symbol."""
+    def __init__(self, kb):
+        super().__init__()
+        self.kb = kb
+        self.reasons = {}
+
+    def add(self, symbol):
+        if symbol in self:
+            return
+        for premise in self.kb.rules.get(symbol, []):
+            symbols = tuple(conjuncts(premise))
+            if all(s in self.kb.facts or s in self for s in symbols):
+                self.reasons[symbol] = symbols
+                break
+        super().add(symbol)
+
+
+def build_proof(kb, query):
+    """List the recorded steps leading from givens to the query."""
+    steps = []
+    shown = set()
+
+    def add_steps(symbol):
+        if symbol in shown:
+            return True
+        if symbol in kb.facts:
+            steps.append(('given', symbol, ()))
+        else:
+            premises = kb.proven.reasons.get(symbol)
+            if premises is None or not all(add_steps(s) for s in premises):
+                return False
+            steps.append(('inferred', symbol, premises))
+        shown.add(symbol)
+        return True
+
+    if not add_steps(query):
+        return []
+    return steps
 
 
 def render_board(values, givens, n, box_h, box_w):
@@ -155,16 +197,19 @@ if st.button('Check entailment'):
     with st.spinner('Tracing the proof...'):
         try:
             kb = build_definite_kb(n, box_h, box_w, givens)
-            proof = []
+            kb.proven = ProofSet(kb)
             query = atom('Is', query_row, query_col, query_value)
-            entailed = pl_bc_entails(kb, query, proof)
+            entailed = pl_bc_entails(kb, query)
 
             eliminated = False
+            proved_query = query
             if not entailed:
-                proof = []
-                eliminated = pl_bc_entails(
-                    kb, atom('Not', query_row, query_col, query_value), proof
-                )
+                proved_query = atom('Not', query_row, query_col, query_value)
+                eliminated = pl_bc_entails(kb, proved_query)
+
+            proof = build_proof(kb, proved_query) if entailed or eliminated else []
+            if (entailed or eliminated) and not proof:
+                raise ValueError('The result was proved, but its reasoning trace could not be reconstructed.')
 
             st.session_state['query_result'] = (
                 selected_index,
