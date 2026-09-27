@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "Puzzle 1: FC/BC exact grids, query True/False, nonempty trace, switch clearing PASS",
+    "Puzzle 2: FC/BC exact grids, query True/False, nonempty trace, switch clearing PASS",
+    "Puzzle 3: FC/BC exact grids, query True/False, nonempty trace, switch clearing PASS",
+    "Puzzle 4: FC/BC exact grids, query True/False, nonempty trace, switch clearing PASS",
+    "Puzzle 5: FC/BC exact grids, query True/False, nonempty trace, switch clearing PASS"
+  ],
+  "unknown_vs_excluded": "PASS",
+  "return_to_previous_clears_results": "PASS",
+  "status": "PASS"
+}

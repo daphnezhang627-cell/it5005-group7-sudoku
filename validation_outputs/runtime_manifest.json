@@ -1,0 +1,12 @@
+{
+  "base_commit": "be772cc",
+  "work_branch": "group7-integration",
+  "files": {
+    "sudoku_solver.py": "225cafd7524fabbe6b03c7efd03c6ac8e667e4b8b59ed647279fe09f47d321a0",
+    "sudoku_app.py": "03b24acd9eda7b6daf92022a939d28b8a46814848b6782befa19dccc546bda9c",
+    "logic_.py": "0613b569bc80bd6cc84621fd596d11fe684f6aff9e28f51d9a064692a03aef5f",
+    "utils.py": "d9a842c16950180dbb2b26a4e871e86fb98f340a3833b892835dac3b5e990c4c",
+    "puzzles.json": "73260519b141554ddbb81d5b199cb62e88eb198286b404ee1cea77a213689975",
+    "requirements.txt": "d022791a835dfe3e1797ca5f2c50813afeec2f3d75fbe8ebfb10c11c7b7d59a3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "baseline_branch": "current-assignment",
+  "baseline_commit": "be772cc",
+  "work_branch": "group7-integration",
+  "repository": "daphnezhang627-cell/it5005-group7-sudoku",
+  "entrypoint": "sudoku_app.py",
+  "deployment_status": "PENDING: account-side branch configuration and public verification required",
+  "missing": [
+    "FANG XUYI student ID confirmation",
+    "Actual contributions confirmation",
+    "Integration-branch deployment and verification"
+  ]
+}

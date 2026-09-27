@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+validation_outputs/ipython/
+validation_outputs/jupyter_runtime/
+validation_outputs/jupyter_config/
+validation_outputs/*stdout.txt
+validation_outputs/browser_failure.png
+validation_outputs/executed_notebook.ipynb

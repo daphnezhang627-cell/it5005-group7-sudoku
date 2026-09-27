@@ -147,6 +147,12 @@ selected_index = st.selectbox(
     range(len(puzzles)),
     format_func=lambda i: f'Puzzle {i + 1} — {puzzles[i]["given_count"]} givens',
 )
+# Changing puzzles discards results instead of reviving them on return.
+if st.session_state.get('active_puzzle') != selected_index:
+    st.session_state.pop('solve_result', None)
+    st.session_state.pop('query_result', None)
+    st.session_state['active_puzzle'] = selected_index
+
 selected = puzzles[selected_index]
 givens = {
     tuple(map(int, key.split('_'))): value

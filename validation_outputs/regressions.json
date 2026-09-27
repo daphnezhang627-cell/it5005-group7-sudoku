@@ -1,0 +1,8 @@
+{
+  "cycle_duplicate_long_chain_cache": "PASS",
+  "random_horn_queries": 1000,
+  "verified_proof_dags": 810,
+  "direct_fc_bc_queries": 50,
+  "protected_files_functions_imports": "PASS",
+  "status": "PASS"
+}
