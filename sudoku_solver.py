@@ -201,14 +201,18 @@ def pl_bc_entails(kb, query):
     deferred = []
 
     def mark_proven(symbol):
-        if symbol not in kb.facts and symbol not in kb.proven:
-            kb.proven.add(symbol)
+        # Process new proofs iteratively to keep long chains off the call stack.
+        to_mark = [symbol]
+        while to_mark:
+            current = to_mark.pop()
+            if current in kb.facts or current in kb.proven:
+                continue
 
-            for rule in kb.waiting.pop(symbol, set()):
+            kb.proven.add(current)
+            for rule in kb.waiting.pop(current, set()):
                 kb.remaining[rule] -= 1
-
                 if kb.remaining[rule] == 0:
-                    mark_proven(rule[0])
+                    to_mark.append(rule[0])
 
     def prove(q, depth=0):
         if q in kb.facts or q in kb.proven:
