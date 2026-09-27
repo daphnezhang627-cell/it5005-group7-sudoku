@@ -98,9 +98,10 @@ Visual inspection found the top label behind Streamlit's header; app spacing was
 
 ## Remaining submission requirements
 
-1. CHOOG SHENG HONG's student ID. The other three IDs have been supplied and recorded.
-2. User confirmation of each member's actual contribution; CHOOG SHENG HONG remains
-   recorded as not yet contacted, with no invented testing contribution.
+1. Confirm actual contributions for the three participating members.
+2. CHOOG SHENG HONG's student ID is unavailable. The group representative confirmed
+   that he could not be contacted and did not contribute, and that the instructor
+   has been informed. He remains listed; instructor approval to remove him is not claimed.
 Public deployment is complete and verified; the real URL is saved in the Notebook.
 
 No public URL is invented. Group7_DRAFT.zip contains only Group7/ with the three
@@ -144,7 +145,7 @@ Only Notebook Markdown was edited to add the URL; executed code and outputs are 
 
 Three student IDs and the agreed task allocation have been recorded in the Notebook.
 Responsibilities are explicitly planned assignments, not confirmed completed contributions.
-CHOOG SHENG HONG remains uncontacted; no completed work is attributed to this member.
+On 27 September, the group representative confirmed that CHOOG SHENG HONG could not be contacted, did not contribute, and that the instructor has been informed. No completed work is attributed to him.
 Code cells and saved execution outputs were preserved unchanged.
 
 ## Teacher-template alignment (27 September)
@@ -154,3 +155,5 @@ Preserved attributed historical slow-experiment observations and updated Q2.
 Ran the revised Notebook in a fresh independent Jupyter kernel and updated FC/BC
 outputs and the measurements above. The teacher libraries, solver and app are
 unchanged; their previous deployment and regression results remain applicable.
+
+The 27 September member-status update changes Markdown only; all executed code cells and outputs are preserved.

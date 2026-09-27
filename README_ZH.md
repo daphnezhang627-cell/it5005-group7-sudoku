@@ -5,14 +5,14 @@
 
 ## 当前状态
 
-Group 7、四位成员姓名及三位已提供的学号已写入 Notebook。CHOOG SHENG HONG 的学号及所有成员的实际贡献仍待确认；
+Group 7、四位成员姓名及三位已提供的学号已写入 Notebook。CHOOG SHENG HONG 联系不上、未参与作业，已向老师说明，学号未能取得；其他三人的实际贡献仍待确认；
 不会把拟定任务写成已完成工作，也不会把未联系上的成员写成已完成测试。
 
 本地使用独立 Jupyter 内核执行全部代码单元，真实输出保存在 Notebook；
 详细验证范围见 `VALIDATION.md` 和 `validation_outputs` 中的机器可读记录。
 公网应用已通过独立浏览器功能检查：https://daphnezhang627-cell-it5005-group7-sudoku-sudoku-app-lkd5pg.streamlit.app/
 
-最终提交仍需要 CHOOG SHENG HONG 的学号和确认后的实际贡献；真实网页链接已写入 Notebook。
+CHOOG SHENG HONG 的情况已据实注明，未声称老师同意将其除名；最终提交仍需确认其他三人的实际贡献；真实网页链接已写入 Notebook。
 `Group7_DRAFT.zip` 仅供查看，不能直接提交；资料和部署验证齐全后才生成 `Group7.zip`。
 
 ## 文件用途
