@@ -46,7 +46,11 @@ per puzzle/method is recorded; no claim of universal BC superiority is made.
 Streamlit AppTest passes all five puzzle selectors, both solvers' exact grids,
 positive/negative queries and nonempty reasoning. Switching away and back clears
 results. An empty 4x4 fixture distinguishes no proof from explicit exclusion.
-A real Edge browser test report is recorded separately in browser_tests.json.
+Real Edge browser checks passed all five puzzles with both solvers, exact displayed
+grids, givens, true/false queries, expanded proof text, switching and a 390px
+mobile layout, with no JavaScript page errors. See browser_tests.json.
+Initial browser checks were corrected to wait for Streamlit rerender completion;
+these were test synchronization changes, not additional application changes.
 Public integration-branch deployment is not yet verified; the older app is not
 claimed as validation of this version.
 

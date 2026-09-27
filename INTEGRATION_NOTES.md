@@ -38,7 +38,7 @@ The reported ~0.2 seconds describes KB construction, not inference.
 | Bounded resolution/model checking | Teacher example and preserved Observation | Teammate's reported interruptions preserved; not rerun |
 | All five puzzles, candidates, timings | Notebook validation cells | Fresh-kernel output in Notebook |
 | Q1–Q5 | Part B | Filled, matched to current code |
-| Select puzzle, display givens, FC/BC/time | sudoku_app.py | AppTest and browser checks |
+| Select puzzle, display givens, FC/BC/time | sudoku_app.py | PASS: AppTest and real Edge, all five puzzles |
 | BC query and actual reasoning | ProofSet, build_proof, query UI | Proof DAG and UI tests |
 | Protected files/functions/imports | tests/test_regressions.py | Byte/AST comparison |
 | Community Cloud integration branch | share.streamlit.io | Pending account-side deployment and public verification |
