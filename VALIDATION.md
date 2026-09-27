@@ -1,53 +1,58 @@
 # Group 7 validation record
 
-Validated locally on 25 September 2026 with Python 3.12.14 on Windows.
+Notebook revalidated locally on 27 September 2026 with Python 3.12.14 on Windows.
+The inference and Streamlit regression checks below were performed on 25 September; those source files are unchanged.
 Public deployment has been verified. The submission remains a draft until student IDs and actual contributions are confirmed.
 
 ## Independent Jupyter execution
 
 All 10 code cells ran in order in a fresh Jupyter kernel.
 Execution counts are 1–10; no unhandled error outputs occurred.
-Observed total execution time: 371.151 seconds.
+Observed total execution time: 373.985 seconds.
 The deliverable Notebook contains its real stdout and rich display outputs.
 The earlier draft's in-process-only limitation has been resolved.
-The simplified experiment and all other code cells were executed in this fresh kernel.
-Only an outdated browser-load caveat in Markdown was removed afterward; code and outputs are unchanged.
+The general-KB cell now follows the teacher's uncomment/run/interrupt template.
+Both expensive calls are commented out during Run All. Their actual historical
+bounded-run observations are explicitly attributed to the 25 September experiment.
+This Run All verifies the remaining cells, including all five FC/BC grids and queries.
 
 ## Full-grid and candidate verification
 
 | Puzzle | Givens | FC full grid (s) | BC full grid (s) | Result |
 |---|---:|---:|---:|---|
-| 1 | 30 | 10.018 | 0.362 | PASS |
-| 2 | 33 | 10.833 | 0.559 | PASS |
-| 3 | 36 | 9.409 | 0.331 | PASS |
-| 4 | 39 | 13.316 | 0.572 | PASS |
-| 5 | 42 | 11.389 | 0.427 | PASS |
+| 1 | 30 | 14.571 | 0.538 | PASS |
+| 2 | 33 | 16.730 | 0.460 | PASS |
+| 3 | 36 | 15.411 | 0.561 | PASS |
+| 4 | 39 | 13.018 | 0.426 | PASS |
+| 5 | 42 | 12.040 | 0.466 | PASS |
 
 - All five FC and BC grids equal the supplied reference solutions.
 - On every puzzle, all 729 Is queries were checked with both algorithms against
   the correct/incorrect candidate expectation: 3,645 candidate pairs, 7,290 assertions.
 - Solvers receive only givens; the answer key is used only in validation.
-- Three same-puzzle FC runs (s): [10.018, 16.053, 15.718].
-- Three same-puzzle BC runs (s): [0.362, 0.438, 0.423].
-- Median FC = 15.718 s; median BC = 0.423 s.
+- Three same-puzzle FC runs (s): [14.571, 18.314, 17.432].
+- Three same-puzzle BC runs (s): [0.538, 0.466, 0.483].
+- Median FC = 17.432 s; median BC = 0.483 s.
 - Each full-grid call builds a fresh KB. The supplied FC algorithm resets its
   counters/agenda per candidate query and uses an indexed premise lookup. BC
   reuses proven subgoals and dependency tables across queries within the call.
   These measurements compare the submitted implementations, not inference
   direction alone. The workstation was not CPU-isolated; the per-run values show timing variability.
 
-## Bounded general-KB experiments
+## Historical bounded general-KB experiments (25 September)
 
-- **resolution**: stopped at 30-second wall-time limit; observed wall time 30.025 s.
-- **model checking**: stopped at 30-second wall-time limit; observed wall time 30.028 s.
+- Resolution: no Boolean result before stopping at 30.025 s.
+- Model checking: no Boolean result before stopping at 30.028 s.
 
-Both original algorithms were actually entered. A separate child process permits
-automatic stopping after approximately 30 seconds, including startup and KB construction.
-A short psutil loop also monitors resident memory and stops a child above 768 MiB;
-this is a sampled guard, not a hard operating-system memory cap. Neither stopping
-condition is a Boolean entailment answer. The long Windows Job Object/ctypes code
-has been removed. The previous MemoryError result is historical and is not reused.
-The Notebook also contains passing small-grid resolution/model-checking examples.
+Both supplied algorithms were entered, unchanged. These are historical observations
+from automatic child-process limits, including startup and KB construction, not
+new measurements from manually interrupting a Jupyter cell. Neither reached the
+sampled memory stopping condition in that run. The original executed Notebook and
+reports are preserved in ../review_materials/before_teacher_alignment_*/.
+The current Notebook removes that wrapper and presents direct commented calls,
+as instructed by the teacher. Run one call at a time, interrupt after about 30
+seconds if needed, and record actual observations. Run All skips those calls.
+Small-grid resolution/model-checking correctness assertions still execute and pass.
 
 ## Additional inference regression checks
 
@@ -142,11 +147,10 @@ Responsibilities are explicitly planned assignments, not confirmed completed con
 CHOOG SHENG HONG remains uncontacted; no completed work is attributed to this member.
 Code cells and saved execution outputs were preserved unchanged.
 
-## Experiment simplification
+## Teacher-template alignment (27 September)
 
-Replaced the platform-specific memory-limit code with a 54-line self-contained
-experiment using unchanged library calls, a timeout, and a portable memory monitor.
-The complete Notebook was rerun in an independent kernel; this document and
-experiment_summary.json now report that new run. Core solver/app source and the
-previously verified public deployment are unchanged. The original Notebook is backed
-up under ../review_materials/before_experiment_simplification_*/.
+Removed automatic timeout and memory-monitor code from the deliverable Notebook.
+Preserved attributed historical slow-experiment observations and updated Q2.
+Ran the revised Notebook in a fresh independent Jupyter kernel and updated FC/BC
+outputs and the measurements above. The teacher libraries, solver and app are
+unchanged; their previous deployment and regression results remain applicable.
