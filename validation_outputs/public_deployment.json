@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "url": "https://daphnezhang627-cell-it5005-group7-sudoku-sudoku-app-grou-s9qpys.streamlit.app/",
+  "checked_at": "2026-09-27T17:08:05.766Z",
+  "checks": [
+    "Puzzle 1: FC/BC exact grids, givens, queries and proof text PASS",
+    "Puzzle 2: FC/BC exact grids, givens, queries and proof text PASS",
+    "Puzzle 3: FC/BC exact grids, givens, queries and proof text PASS",
+    "Puzzle 4: FC/BC exact grids, givens, queries and proof text PASS",
+    "Puzzle 5: FC/BC exact grids, givens, queries and proof text PASS"
+  ],
+  "runs": [
+    {
+      "puzzle": 1,
+      "method": "Backward chaining",
+      "result": "Backward chaining solved the grid in 0.83 seconds."
+    },
+    {
+      "puzzle": 1,
+      "method": "Forward chaining",
+      "result": "Forward chaining solved the grid in 29.29 seconds."
+    },
+    {
+      "puzzle": 2,
+      "method": "Backward chaining",
+      "result": "Backward chaining solved the grid in 1.04 seconds."
+    },
+    {
+      "puzzle": 2,
+      "method": "Forward chaining",
+      "result": "Forward chaining solved the grid in 35.84 seconds."
+    },
+    {
+      "puzzle": 3,
+      "method": "Backward chaining",
+      "result": "Backward chaining solved the grid in 0.83 seconds."
+    },
+    {
+      "puzzle": 3,
+      "method": "Forward chaining",
+      "result": "Forward chaining solved the grid in 27.04 seconds."
+    },
+    {
+      "puzzle": 4,
+      "method": "Backward chaining",
+      "result": "Backward chaining solved the grid in 0.84 seconds."
+    },
+    {
+      "puzzle": 4,
+      "method": "Forward chaining",
+      "result": "Forward chaining solved the grid in 26.33 seconds."
+    },
+    {
+      "puzzle": 5,
+      "method": "Backward chaining",
+      "result": "Backward chaining solved the grid in 1.06 seconds."
+    },
+    {
+      "puzzle": 5,
+      "method": "Forward chaining",
+      "result": "Forward chaining solved the grid in 23.67 seconds."
+    }
+  ],
+  "page_errors": [],
+  "repository": "daphnezhang627-cell/it5005-group7-sudoku",
+  "branch": "group7-integration",
+  "entrypoint": "sudoku_app.py",
+  "runtime_source_commit": "5beb71d5835e6501bb9e08ee305aa7a29693f907",
+  "runtime_files": {
+    "sudoku_solver.py": "225cafd7524fabbe6b03c7efd03c6ac8e667e4b8b59ed647279fe09f47d321a0",
+    "sudoku_app.py": "03b24acd9eda7b6daf92022a939d28b8a46814848b6782befa19dccc546bda9c",
+    "logic_.py": "0613b569bc80bd6cc84621fd596d11fe684f6aff9e28f51d9a064692a03aef5f",
+    "utils.py": "d9a842c16950180dbb2b26a4e871e86fb98f340a3833b892835dac3b5e990c4c",
+    "puzzles.json": "73260519b141554ddbb81d5b199cb62e88eb198286b404ee1cea77a213689975",
+    "requirements.txt": "d022791a835dfe3e1797ca5f2c50813afeec2f3d75fbe8ebfb10c11c7b7d59a3"
+  },
+  "additional_checks": [
+    "Switching puzzles clears solved grid and query trace",
+    "390px mobile grid fits viewport",
+    "No JavaScript page errors"
+  ]
+}

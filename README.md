@@ -24,4 +24,6 @@ validation cells. Q1 and Q3 preserve the teammate's latest explanations.
 
 Member IDs and Part B responsibilities are confirmed and recorded. The unreachable
 fourth member's unknown information is documented without invented contributions.
-Pending: deploy this branch and verify its public app before declaring the ZIP ready.
+Public app (verified): https://daphnezhang627-cell-it5005-group7-sudoku-sudoku-app-grou-s9qpys.streamlit.app/
+Deployment uses this integration branch and sudoku_app.py with Python 3.12.
+The final submission archive is Group7.zip, containing only the required three files.

@@ -41,16 +41,17 @@ The reported ~0.2 seconds describes KB construction, not inference.
 | Select puzzle, display givens, FC/BC/time | sudoku_app.py | PASS: AppTest and real Edge, all five puzzles |
 | BC query and actual reasoning | ProofSet, build_proof, query UI | Proof DAG and UI tests |
 | Protected files/functions/imports | tests/test_regressions.py | Byte/AST comparison |
-| Community Cloud integration branch | share.streamlit.io | Pending account-side deployment and public verification |
+| Community Cloud integration branch | share.streamlit.io | PASS: public browser, all five puzzles |
 | Member information | Notebook group section | Three IDs and Part B allocation confirmed; unreachable fourth member documented |
-| Exactly three files under Group7 | packaging check | Draft only until remaining requirements resolved |
+| Exactly three files under Group7 | packaging check | PASS: Group7.zip, exactly three required files |
 
 ## Deployment
 
 Required source: repository `daphnezhang627-cell/it5005-group7-sudoku`, branch
 `group7-integration`, entry `sudoku_app.py`. Six runtime files remain together.
-Do not confuse the earlier main deployment with verified integration deployment.
-Keep the older app if a new deployment is necessary; do not delete it.
+Public URL: https://daphnezhang627-cell-it5005-group7-sudoku-sudoku-app-grou-s9qpys.streamlit.app/
+Verified all five puzzles, both solvers, queries, traces, switching and mobile width.
+The older main-branch app is retained; no main/current-assignment merge was made.
 
 ## Confirmed member update (28 September)
 

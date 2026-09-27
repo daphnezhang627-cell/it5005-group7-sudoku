@@ -1,12 +1,10 @@
 {
-  "archive": "/mnt/c/users/93459/desktop/it5005/assignment export/Group7_Integration_DRAFT.zip",
-  "status": "DRAFT",
-  "missing": [
-    "Integration-branch deployment and verification"
-  ],
-  "sha256": "0784041355fb4890a5404c8be8ee3fa245937c743eceda392bacb8ad7873abf7",
+  "archive": "/mnt/c/users/93459/desktop/it5005/assignment export/Group7.zip",
+  "status": "READY",
+  "missing": [],
+  "sha256": "618f6726d388f6636147725c3aef7ab42d25da1a3ab5a6523674769f6cce28ec",
   "files": {
-    "Sudoku_Assignment.ipynb": "c000aea8ac07b9a3c4b9a2d768b0f32fbd68f507b07b75a57f5d71b6ae17ca93",
+    "Sudoku_Assignment.ipynb": "7c189bdadaedb1bcb5803c55a4ef0e23b320366fdb4e4dfa93c47c3c06413bca",
     "sudoku_solver.py": "225cafd7524fabbe6b03c7efd03c6ac8e667e4b8b59ed647279fe09f47d321a0",
     "sudoku_app.py": "03b24acd9eda7b6daf92022a939d28b8a46814848b6782befa19dccc546bda9c"
   }

@@ -4,9 +4,8 @@
   "work_branch": "group7-integration",
   "repository": "daphnezhang627-cell/it5005-group7-sudoku",
   "entrypoint": "sudoku_app.py",
-  "deployment_status": "PENDING: account-side branch configuration and public verification required",
-  "missing": [
-    "Integration-branch deployment and verification"
-  ],
-  "member_status": "Three IDs and Part B responsibilities confirmed. CHOOG SHENG HONG unreachable; instructor informed; ID/contribution unknown. Other individual contributions not asserted."
+  "deployment_status": "PASS: public browser verification on integration deployment",
+  "missing": [],
+  "member_status": "Three IDs and Part B responsibilities confirmed. CHOOG SHENG HONG unreachable; instructor informed; ID/contribution unknown. Other individual contributions not asserted.",
+  "deployment_url": "https://daphnezhang627-cell-it5005-group7-sudoku-sudoku-app-grou-s9qpys.streamlit.app/"
 }

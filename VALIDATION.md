@@ -11,7 +11,7 @@ The slow general-KB calls stay commented as permitted by the template.
 The teammate's recorded Observation on Is1_1_1 is preserved verbatim; it is a
 reported interrupted experiment, not remeasured in this run. Its 0.2 seconds
 is explicitly KB construction time. No timeout is interpreted as False.
-Only the Q4 notation clarification and pending deployment/member Markdown may
+Only the Q4 notation clarification and deployment/member Markdown may
 change after execution; all code and outputs remain matched to the executed snapshot.
 
 | Puzzle | FC seconds | BC seconds | Exact reference grid |
@@ -51,12 +51,19 @@ grids, givens, true/false queries, expanded proof text, switching and a 390px
 mobile layout, with no JavaScript page errors. See browser_tests.json.
 Initial browser checks were corrected to wait for Streamlit rerender completion;
 these were test synchronization changes, not additional application changes.
-Public integration-branch deployment is not yet verified; the older app is not
-claimed as validation of this version.
+Public integration-branch deployment also passed the same browser suite.
+URL: https://daphnezhang627-cell-it5005-group7-sudoku-sudoku-app-grou-s9qpys.streamlit.app/
+Repository: daphnezhang627-cell/it5005-group7-sudoku; branch: group7-integration;
+entrypoint: sudoku_app.py; Python: 3.12. Runtime source commit: 5beb71d.
+All six runtime file hashes match runtime_manifest.json and this submission.
+Cloud FC times were 29.29, 35.84, 27.04, 26.33, 23.67 seconds; BC times were
+0.83, 1.04, 0.83, 0.84, 1.06 seconds. These are separate from Notebook timings.
+See public_deployment.json. The older main app is retained.
 
 ## Submission status
 
 The three participating members' IDs and Part B responsibilities are confirmed.
 CHOOG SHENG HONG is unreachable and the instructor has been informed; his
 ID/contribution remain unconfirmed. Other individual contributions are not invented.
-Pending Cloud configuration/public verification of group7-integration. Only a clearly named draft ZIP may be produced at this stage.
+Cloud verification passed. Group7.zip contains exactly the three required files
+under Group7/. No unresolved deployment or confirmed-member metadata blocker remains.
